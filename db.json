@@ -1,0 +1,42 @@
+{
+  "logs": [
+    {
+      "id": 1,
+      "message": "Changed hard drive 005",
+      "attention": false,
+      "date": "03-02-2019",
+      "tech": "Jon Byrne"
+    },
+    {
+      "id": 2,
+      "message": "Changed keyboard 110",
+      "attention": true,
+      "date": "03-01-2019",
+      "tech": "Pete Bain"
+    },
+    {
+      "id": 3,
+      "message": "Changed mouse",
+      "attention": true,
+      "date": "05-12-2018",
+      "tech": "Bessy Popper"
+    }
+  ],
+  "techs": [
+    {
+      "id": 1,
+      "fname": "Jon",
+      "sname": "Byrne"
+    },
+    {
+      "id": 2,
+      "fname": "Pete",
+      "sname": "Bain"
+    },
+    {
+      "id": 3,
+      "fname": "Bessy",
+      "sname": "Popper"
+    }
+  ]
+}
