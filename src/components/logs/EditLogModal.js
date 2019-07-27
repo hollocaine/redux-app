@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import M from 'materialize-css/dist/js/materialize.min.js';
 
-const AddLogModal = () => {
+const EditLogModal = () => {
   const [message, setMessage] = useState('');
   const [attention, setAttention] = useState(false);
   const [tech, setTech] = useState('');
@@ -10,13 +10,14 @@ const AddLogModal = () => {
       M.toast({ html: 'Please enter a message and tech' });
     } else {
       console.log(message, tech, attention);
+      //Clear fields
       setMessage('');
       setTech('');
       setAttention(false);
     }
   };
   return (
-    <div id="add-log-modal" className="modal" style={modalStyle}>
+    <div id="edit-log-modal" className="modal" style={modalStyle}>
       <div className="modal-content">
         <h4>Enter System Log</h4>
         <div className="row">
@@ -72,7 +73,7 @@ const AddLogModal = () => {
           onClick={onSubmit}
           className="modal-close waves-effect blue waves-light btn"
         >
-          Enter
+          Edit
         </a>
       </div>
     </div>
@@ -82,4 +83,4 @@ const modalStyle = {
   width: '75%',
   height: '75%'
 };
-export default AddLogModal;
+export default EditLogModal;
