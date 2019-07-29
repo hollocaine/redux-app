@@ -73,7 +73,7 @@ const EditLogModal = () => {
           onClick={onSubmit}
           className="modal-close waves-effect blue waves-light btn"
         >
-          Edit
+          Save
         </a>
       </div>
     </div>
