@@ -5,14 +5,17 @@ import { addTech } from '../../actions/techActions';
 import M from 'materialize-css/dist/js/materialize.min.js';
 
 const AddTechModal = ({ addTech }) => {
+  const [fname, setFname] = useState('');
+  const [sname, setSname] = useState('');
   const onSubmit = () => {
     if (fname === '' || sname === '') {
       M.toast({ html: 'Please enter first and last name' });
     } else {
-      addTech(fname, sname);
+      addTech({fname, sname});
+      M.toast({ html: `${fname} ${sname} was added as a technician` });
+      setFname('');
+      setSname('');
     }
-    setFname('');
-    setSname('');
   };
   return (
     <div id="add-tech-modal" className="modal" style={modalStyle}>
